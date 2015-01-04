@@ -7,6 +7,7 @@ download.file("http://www.epa.gov/ttn/airs/airsaqs/detaildata/501files/Rd_501_88
 unzip("dataset1999.Zip")
 
 download.file("http://www.epa.gov/ttn/airs/airsaqs/detaildata/501files/RD_501_88101_2012.zip", destfile = "dataset2012.zip")
+unzip("dataset2012.zip")
 
 ## Read in data from 1999
 
@@ -53,7 +54,7 @@ str(dates)
 dates <- as.Date(as.character(dates), "%Y%m%d")
 str(dates)
 hist(dates, "month")  ## Check what's going on in months 1--6
-
+hist(dates[negative], "month") 
 
 ## Plot a subset for one monitor at both times
 
