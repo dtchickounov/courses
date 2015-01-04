@@ -2,6 +2,11 @@
 
 ## Has fine particle pollution in the U.S. decreased from 1999 to
 ## 2012?
+#downloading data from the website, unzipping it. 
+download.file("http://www.epa.gov/ttn/airs/airsaqs/detaildata/501files/Rd_501_88101_1999.zip","dataset1999.zip")
+unzip("dataset1999.Zip")
+
+download.file("http://www.epa.gov/ttn/airs/airsaqs/detaildata/501files/RD_501_88101_2012.zip", destfile = "dataset2012.zip")
 
 ## Read in data from 1999
 
