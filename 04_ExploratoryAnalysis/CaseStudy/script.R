@@ -129,7 +129,7 @@ head(mrg)
 
 ## Connect lines
 par(mfrow = c(1, 1))
-with(mrg, plot(rep(1, 52), mrg[, 2], xlim = c(.5, 2.5)))
-with(mrg, points(rep(2, 52), mrg[, 3]))
-segments(rep(1, 52), mrg[, 2], rep(2, 52), mrg[, 3])
+with(mrg, plot(rep(1999, 52), mrg[, 2], xlim = c(1998, 2012)))
+with(mrg, points(rep(2012, 52), mrg[, 3]))
+segments(rep(1999, 52), mrg[, 2], rep(2012, 52), mrg[, 3])
 
